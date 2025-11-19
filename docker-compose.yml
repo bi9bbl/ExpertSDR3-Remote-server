@@ -1,8 +1,6 @@
 services:
   expertsdr3-remote-server:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: ghcr.io/bi9bbl/expertsdr3-remote-server:latest
     container_name: ExpertSDR3-Remote-server
     ports:
       - "8080:8080"
