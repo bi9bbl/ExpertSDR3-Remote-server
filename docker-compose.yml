@@ -1,0 +1,11 @@
+services:
+  expertsdr3-remote-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ExpertSDR3-Remote-server
+    ports:
+      - "8080:8080"
+    volumes:
+      - /usr/share/zoneinfo/Asia/Shanghai:/etc/localtime:ro
+      - $PWD/config.json:/app/config.json
