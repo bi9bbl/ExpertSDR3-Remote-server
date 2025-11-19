@@ -18,4 +18,4 @@ RUN echo -n | openssl s_client -connect cloud.eesdr.com:5450 -servername cloud.e
 
 EXPOSE 8080
 
-CMD ["bash","starter","-cloud","cloud.eesdr.com:5450","-relay","cloud.eesdr.com:5454","-http","8080"]
+CMD ["bash","run.sh"]
